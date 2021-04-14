@@ -6,7 +6,7 @@ import VideoSidebar from './VideoSidebar';
 const Video = ({ url, channel, description, song, likes, shares, messages }) => {
     const [playing, setPlaying] = useState(false);
     const videoRef = useRef(null);
-   
+
     const handleVideoPress = () => {
         if (playing) {
             videoRef.current.pause();
@@ -19,7 +19,7 @@ const Video = ({ url, channel, description, song, likes, shares, messages }) => 
 
     return (
         <div className="video">
-            <VideoSidebar likes={likes} shares={shares} messages={messages} />
+
             <video
                 className="video__player"
                 ref={videoRef}
@@ -32,7 +32,7 @@ const Video = ({ url, channel, description, song, likes, shares, messages }) => 
                 description={description}
                 song={song}
             />
-
+            <VideoSidebar likes={likes} shares={shares} messages={messages} />
         </div>
     )
 }
