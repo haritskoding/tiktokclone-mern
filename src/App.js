@@ -20,9 +20,9 @@ function App() {
 
   return (
     <div className="app">
-      <h2 style={{ color: 'white', marginTop: '20px', marginBottom: '40px' }}>
-        @copyright Teguh Muhammad harits
-      </h2>
+      <h5 style={{ color: 'white', marginTop: '6px', marginBottom: '13px' }}>
+        @copyright Teguh Muhammad harits link backend <a href="https://tiktok-backend-teguh.herokuapp.com/v2/posts">Link</a>
+      </h5>
       <div className="app__videos">
         {videos.map(({ _id, url, channel, description, song, likes, shares, messages }) => (
           <Video
