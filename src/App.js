@@ -18,10 +18,13 @@ function App() {
     }
   }
 
- 
+
 
   return (
     <div className="app">
+      <h1 style={{ color: 'white' }}>
+        @copyright Teguh Muhammad harits
+      </h1>
       <div className="app__videos">
         <Video
           url="https://res.cloudinary.com/teguhharits/video/upload/v1618400126/sisk_mg4gph.mp4"

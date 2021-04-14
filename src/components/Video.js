@@ -6,7 +6,7 @@ import VideoSidebar from './VideoSidebar';
 const Video = ({ url, channel, description, song, likes, shares, messages }) => {
     const [playing, setPlaying] = useState(false);
     const videoRef = useRef(null);
-    console.log(videoRef, 'reff')
+   
     const handleVideoPress = () => {
         if (playing) {
             videoRef.current.pause();
